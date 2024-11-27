@@ -25,7 +25,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(72, 80, 87);
+    background-color: #485057;
     color: #fff;
     padding: 16px;
     height: 90px;
@@ -41,4 +41,43 @@ a {
     display: flex;
     justify-content: space-evenly;
     gap: 24px;
+}
+
+.subheader {
+    background-color: rgb(72, 80, 87);
+    min-height: 320px;
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.subheader-left {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    gap: 16px;
+}
+
+.subheader-left p {
+    color: #e8e8e8;
+}
+
+.subheader-left button {
+    padding: 8px 32px;
+    border: 2px solid #5959f0;
+    background-color: #5959f0;
+    border-radius: 10px;
+    align-self: flex-start;
+    color: #fff;
+}
+
+.image {
+    background-color: #6b757d;
+    height: 200px;
+    flex: 0 1 500px;
+    text-align: center;
+    align-content: center;
 }
