@@ -1,3 +1,7 @@
+* {
+    border: 1px solid red;
+}
+
 *,
 *::before,
 *::after {
@@ -9,7 +13,7 @@
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Roboto;
 }
 
 li {
@@ -21,15 +25,31 @@ a {
     color: inherit;
 }
 
+h1 {
+    text-align: center;
+}
+
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #485057;
     color: #fff;
     padding: 16px;
     height: 90px;
     text-align: center;
+}
+
+.container-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 860px;
+}
+
+.container-section {
+    margin: auto;
+    max-width: 860px;
 }
 
 .logo {
@@ -83,8 +103,8 @@ a {
 }
 
 .images {
-    padding: 64px 32px 32px;
-    text-align: center;
+    /* padding: 64px 32px 32px;
+    text-align: center; */
     min-height: 500px;
 }
 
@@ -113,21 +133,36 @@ a {
     flex: 0 1 200px;
 }
 
-.quote-box {
+.container-section-quotes {
     min-height: 300px;
-    background-color: #bcbcbc;
+    background-color: #e5e7eb;
+    padding: 32px;
+    gap: 32px;
+    display: flex;
+}
+
+.quote-box {
+    max-width: 860px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 32px;
-    gap: 32px;
+    margin: auto;
+    /* gap: 16px; */
 }
 
 .quote {
-    width: 860px;
+    flex: 0 1 150px;
+    align-content: flex-end;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+    color: #1f2937;
 }
 
 .author {
-    
+    align-self: flex-end;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
 }
